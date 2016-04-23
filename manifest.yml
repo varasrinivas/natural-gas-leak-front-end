@@ -1,0 +1,16 @@
+---
+applications:
+- name: gasdetect-predix-nodejs-starter
+  memory: 128M
+  buildpack: nodejs_buildpack
+  #command:  DEBUG=express:* node app.js
+  command:  node app.js
+services:
+  - gasdetect-secure-uaa-instance
+env:
+    node_env: cloud
+    uaa_service_label : predix-uaa
+    clientId: gasdetect
+    base64ClientCredential: Z2FzZGV0ZWN0OnRlc3QxMjN0ZXN0
+    # Following properties configured only for Timeseries WindData service Integration
+    windServiceUrl: "https://gasdetect-winddata-timeseries-service.run.aws-usw02-pr.ice.predix.io"

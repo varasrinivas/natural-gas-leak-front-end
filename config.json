@@ -1,0 +1,9 @@
+{
+  "development":{
+    "clientId": "gasdetect",
+    "uaaUri" : "https://2eb525c0-bb0a-4d70-b7d5-1d190202ce66.predix-uaa.run.aws-usw02-pr.ice.predix.io",
+    "base64ClientCredential": "Z2FzZGV0ZWN0OnRlc3QxMjN0ZXN0",
+    "appUrl": "http://localhost:3000",
+    "windServiceUrl": "https://gasdetect-winddata-timeseries-service.run.aws-usw02-pr.ice.predix.io"
+  }
+}
